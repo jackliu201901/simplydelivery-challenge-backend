@@ -33,10 +33,10 @@ $ docker-compose exec php phpunit
 ## Regenerate OpenApi Docs
 
 ```bash
-$ docker-compose exec php openapi app/ -o api.json
+$ docker-compose exec php openapi app/ -o public/api.json
 ```
 
 ## Accessing API and docs
 
-* The api is accessible under `localhost:80`
-* The docs are accessible under `localhost:8080`
+* The api is accessible under `http://localhost`
+* The docs are accessible under `http://localhost/docs`
