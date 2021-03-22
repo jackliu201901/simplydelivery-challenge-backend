@@ -128,7 +128,7 @@ class PizzaController extends Controller
     /**
      * @OA\PUT(
      *     path="/pizzas/{id}",
-     *     summary="Adds a new pizza",
+     *     summary="Updates a single pizza",
      *     operationId="update",
      *     @OA\Parameter(
      *         description="ID of pizza to update",
@@ -254,7 +254,7 @@ class PizzaController extends Controller
      *     ),
      *     @OA\Response(
      *         response=200,
-     *         description="Delete operation successful",
+     *         description="Successfully added property",
      *         @OA\JsonContent(ref="#/components/schemas/Pizza")
      *     ),
      *     @OA\Response(

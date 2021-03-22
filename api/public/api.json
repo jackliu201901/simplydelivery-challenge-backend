@@ -120,7 +120,7 @@
                 }
             },
             "put": {
-                "summary": "Adds a new pizza",
+                "summary": "Updates a single pizza",
                 "operationId": "update",
                 "parameters": [
                     {
@@ -238,7 +238,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Delete operation successful",
+                        "description": "Successfully added property",
                         "content": {
                             "application/json": {
                                 "schema": {
