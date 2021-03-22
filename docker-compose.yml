@@ -45,7 +45,8 @@ services:
   swagger:
     image: swaggerapi/swagger-ui
     environment:
-      SWAGGER_JSON: /api/api.json
+      SWAGGER_JSON_URL: /docs/api.json
+      BASE_URL: /docs
     volumes:
       - ./api:/api
 volumes:
