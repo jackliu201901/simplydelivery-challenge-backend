@@ -33,13 +33,13 @@ class PizzaControllerTest extends TestCase
 
     private function callAuthenticated($method, $uri, $parameters = []) {
         return $this->call($method, $uri, $parameters, [], [], [
-            'HTTP_AUTHORIZATION' => 'Basic ' . $_ENV['API_KEY']
+            'HTTP_X_API_KEY' => $_ENV['API_KEY']
         ]);
     }
 
     private function jsonAuthenticated($method, $uri, $parameters = []) {
         $this->call($method, $uri, $parameters, [], [], [
-            'HTTP_AUTHORIZATION' => 'Basic ' . $_ENV['API_KEY']
+            'HTTP_X_API_KEY' => $_ENV['API_KEY']
         ]);
 
         return $this;

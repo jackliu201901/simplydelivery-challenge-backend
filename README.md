@@ -40,3 +40,9 @@ $ docker-compose exec php openapi app/ -o public/api.json
 
 * The api is accessible under `http://localhost`
 * The docs are accessible under `http://localhost/docs`
+
+### Trying out the API in swagger-ui
+
+*Before you try to execute any requests, make sure to authenticate using the green authorize button in the upper right. Paste the API-Key from you `api/.env` file*
+
+

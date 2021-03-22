@@ -10,4 +10,17 @@
  *     url="http://localhost:80",
  *     description="Local development environment"
  * )
+ *
+ * @OA\OpenApi(
+ *    security={{"apiKey": {}}}
+ * )
+ *
+ * @OA\Components(
+ *     @OA\SecurityScheme(
+ *         securityScheme="apiKey",
+ *         type="apiKey",
+ *         in="header",
+ *         name="X-API-KEY"
+ *     )
+ * )
  */
